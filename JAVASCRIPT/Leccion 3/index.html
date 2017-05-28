@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicios modulo 3</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+// Programa un ejemplo que almacene en un array todas las cartas de la baraja,
+// cada una representada con un diccionario que tenga un palo y un valor.
+// ejemplo de una carta--> carta[0]={palo:palo[0], valor:[0]}
+// devolvería  objet{palo"c",valor"1"} que es la primera carta
+
+//Ejercicio resuelto con consejos de Alex
+// var numero=0;
+// var palo="RCTP";
+//
+// for (var numero = 1; numero < 13; numero=numero+1) {
+//   for (var j = 0; j < palo.length; j++) {
+//     var carta= numero+palo[j];
+//     console.log(carta);
+//   }
+// }
+
+
+//SOLUCIÓN:
+// PRIMERO crea un subocódigo
+//DATOS
+
+var palos=['d','p','t','c'];
+var cartasPorPalo=12;
+var baraja= [];   //Declara las variables siempre arriba, aunque tengas q subir a medida q avanzas se cra vacio pq se rellena con el for
+
+for (var i = 0; i < palo.length; i++) {
+  for (var j = 1; j < cartasPorPalo.length; j++) {
+    var palo= palos[i];
+
+    var carta= {   //crea una carta que...
+      valor:j,
+      palo: palo[i]
+    }
+    // console.log(carta);  ve probando
+    // console.log(carta.palo+carta.valor);
+    listaCartas[cartas.length]=[carta];
+  }
+}
+console.log(baraja);
+
+
+
+
+
+//Ejercicio de miriadax
+//
+for (var i = 1; i <=12; i=i+1) {
+
+//  var cartas={poker:[palo[j]],valor:[i], esp:[palo[h], valor[i]]} estructura
+
+var cartas ={poker:[palo="rctp",valor=i],esp:[palo="oebc",valor=i]}
+  for (var i = 0; i < palo.length; i++) {
+    var
+  }
+    for (var j = 0; j < poker.palo.length; j=j+1) {
+      poker.palo=poker.palo[j];
+    }
+  console.log(cartas);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// var palo=["c","d","t","d"]   //array
+// var valor=[1,2,3,4,5,6,7,8,9,10,11,12];  //array
+//
+//
+//
+// for (var i = 0; i < palo.length; i=i+1) {
+//   for (var j = 0; j < valor.length; j=j+1) {
+//     var baraja = {palo:palo[i],valor:valor[j]}; // HASH: se forma con el array palo, de valor palo[i](cada uno de los palos)
+//     console.log(baraja);                        // y el array de valor, con valor de valor[j] por cada valor.
+//   }
+// }
+// Crear un array con dos diccionarios
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

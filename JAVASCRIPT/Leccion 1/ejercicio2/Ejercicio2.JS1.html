@@ -1,0 +1,81 @@
+<!--
+48 / 2 =24 cartas pares
+24 / 2 = 12 cartas pares y negras-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 2 JS</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      console.log(48/4);
+      console.log("Otra forma de hacerlo");
+      console.log(48/2); /*divido el nº de cartas totales entre 2 para saber las pares que hay*/
+      console.log(24/2);  /*Divido el resultado entre  rojo o negro, para saber las cartas pares que hay de color negro */
+
+// Hecho por Alex
+var totalCards=55;
+var jokers=3;
+var suits=4;
+var blackSuits=2;
+var cardsWhithFigures=3;
+var pairFactor=2;
+
+var cardsPerSuit =(totalCards-jokers)/suits;
+var numberedCards= cardsPerSuit-cardsWhithFigures;
+var evenCards=numberedCards / pairFactor;
+var result=evenCards*blackSuits;
+console.log("Unabaraja de poker tiene " + result + " cartas que son a la vez pares y negras");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      console.log("EJERCICIO 3");
+      var carta='3T';  /*  defino la variable carta con el valor '3T'*/
+      var anterior='2T';    /*defino la variable anterior con el valor '2T'*/
+      var posterior='4T';
+      console.log(anterior+carta+posterior);
+
+//
+var card="5C";
+var cardNumber= card[0];
+var cardSuit=card[1];
+var previousCard= cardNumber -1 +cardSuit;
+var nextCard= +cardNumber+1+cardSuit;
+var threeCards= previousCard+""+card+""+nextCard;
+
+
+
+
+
+
+
+
+      console.log('EJERCICIO 4');
+      var carta='10D';           /* Defino la variable carta con el valor 10D*/
+      console.log(carta [2]);
+      console.log(carta.length-1);               /*Indexo la D (tercer carácter de la cadena)*/
+
+
+
+    </script>
+  </body>
+</html>

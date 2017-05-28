@@ -1,0 +1,86 @@
+/*
+  He quitado los estilos para tipografía, márgenes y tal para dejar solo lo
+  imprescindible
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+/* Styles to use in multiple elements */
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-align-middle {
+  align-items: center;
+}
+
+.horizontal-align-right {
+  align-items: flex-end;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+/* Page styles */
+
+.container {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo {
+  width: 180px;
+}
+
+.button-link {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #e1e1e1;
+  color: black;
+  text-decoration: none;
+}
+
+.button-link + .button-link {
+  margin-left: 12px;
+}
+
+.button-fav {
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.star-icon {
+  width: 72px;
+}
+
+.score {
+  padding: 16px;
+  font-size: 24px;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  margin: 0;
+}

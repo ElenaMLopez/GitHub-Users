@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+}
+.caja1 {
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+
+}
+.caja2 {
+  background-color: green;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+.caja3 {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}

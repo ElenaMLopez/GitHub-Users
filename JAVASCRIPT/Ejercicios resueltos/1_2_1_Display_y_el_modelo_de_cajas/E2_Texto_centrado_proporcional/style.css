@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Para dar un ancho máximo */
+  max-width: 600px;
+}

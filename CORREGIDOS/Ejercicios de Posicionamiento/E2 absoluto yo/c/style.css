@@ -1,0 +1,8 @@
+*{
+  box-sizing: border-box;
+}
+.warning {
+  height: 100px;
+  background-color: yellow;
+  position: fixed;
+}

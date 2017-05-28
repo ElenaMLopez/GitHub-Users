@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: rgb(23, 105, 3);
+}
+h1{
+  color: white;
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ask{
+  color: rgb(201, 247, 188);
+  width: 60%;
+  border: 2px solid rgb(1, 32, 1);
+  padding: 15px;
+}
+
+.inputForm {
+  width: 300px;
+  display: flex;
+  padding: 15px;
+  background-color: rgba(239, 241, 123, 0.87);
+  flex-direction: column;
+  margin-top: 15px;
+  border: 2px solid green;
+}
+.text {
+margin-right: 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+
+}

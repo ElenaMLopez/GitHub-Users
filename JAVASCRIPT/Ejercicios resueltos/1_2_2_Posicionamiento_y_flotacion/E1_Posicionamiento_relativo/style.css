@@ -1,0 +1,38 @@
+* {
+  /*
+    Box-sizing nos permite incluir en el width del elemento el padding y los bordes
+    Es importante para que las cajas midan 300px de ancho, sino se medirá de esta forma:
+    ancho (300px) + padding izquierdo (30px) + padding derecho (30px) = 360px
+  */
+
+  box-sizing: border-box;
+}
+
+/*
+  Código común para todas las cajas,
+  crearemos una clase para no repetirlo tres veces
+*/
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+}
+
+.first {
+  left: 100px;
+  top: 50px;
+  background-color: red;
+}
+.second {
+  right: 150px;
+  bottom: 320px;
+  background-color: green;
+}
+.third {
+  left: 180px;
+  bottom: 240px;
+  background-color: blue;
+}

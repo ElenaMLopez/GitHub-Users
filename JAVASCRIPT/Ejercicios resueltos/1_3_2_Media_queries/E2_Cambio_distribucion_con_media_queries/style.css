@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #BBB;
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Mobile first
+  - Las medidas para móvil van fuera de los media queries
+  - El resto de medidas en media queries ordenadas de menor a mayor
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  background-color: #54FF00;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.content {
+  background-color: #FBFF00;
+}
+
+.article-text {
+  width: 100%;
+}
+
+.image-wrapper {
+  display: none;
+}
+
+.related-info {
+  margin-top: 16px;
+  background-color: grey;
+}
+
+/* Estilos para pantallas con medida entre 768px y 1000px
+
+   Hay gente que ha usado min-width: 480px, también estaría
+   bien pero es un tamaño de pantalla muy pequeño y colocar
+   en ese tamaño dos elementos en fila hace que se vean
+   muy compactados
+*/
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav {
+    width: 20%;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .content,
+  .related-info {
+    width: 70%;
+    margin-left: 32px;
+    margin-right: 32px;
+    flex-shrink: 0;
+  }
+
+  .article {
+    display: flex;
+  }
+
+  .image-wrapper {
+    flex-shrink: 0;
+    display: block;
+    width: 45%;
+    margin-left: 16px;
+  }
+
+  .image {
+    vertical-align: bottom;
+    max-width: 100%;
+  }
+
+  .related-info {
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .nav {
+    width: 20%;
+  }
+
+  .content {
+    flex-shrink: 1;
+  }
+
+  .related-info {
+    width: 20%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

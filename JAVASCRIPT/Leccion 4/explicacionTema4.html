@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Explicaciones tema 4</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+
+      var four=4;
+
+      function sumaCuatro(number){
+        return number+four;
+        console.log('esto no se ejecuta');
+
+      }
+
+      var result= SumarCuatro(2);
+      console.log(result);
+      console.log(four);
+
+      // Ambito de variables, se reduce a la función en la que se ha declarado:
+
+      function sumar1(x){
+        var uno=1;
+        return x+uno;
+      }
+      function multiplicar1(x){
+        var uno=1; // esta variable se puede cambiar sin problema y no afecta a la q está en la función anterior.
+        return x*1;
+      }
+
+      // Cada función debe tan solo hacer una cosa, porque si lo metemos todo en una va a ser un follón
+      // por ejemplo
+
+      var dos=2;
+
+      function parOcero(n){
+        var isZero = n ===0;
+        var isEven=n%2;
+        if (isZero{
+          return"El número es cero";
+        }else if(isEven) {
+          result ="El número es par";
+        }else {
+          result="El número no es ni cero ni par"
+        }
+        return result;
+      }
+
+    </script>
+  </body>
+</html>

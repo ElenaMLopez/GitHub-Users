@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicios de la lección 2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    //  Programa un ejemplo que, dada una variable de tipo cadena con la
+    // carta del 4 de corazones, compruebe si es de corazones y además es el
+    // número 4. En caso afirmativo, lo imprimimos en la consola.
+      var card="4c";
+    if (card[1]==="C") {
+      card[0]==="4"
+    }
+    console.log("Es un cuatro de Corazones");
+
+    // Probamos el mismo programa con el 3 de corazones, y con el rey de corazones.
+    // ¿Qué sucede?
+    //
+    // var card="3C";
+    // if ((card[1]==="C")&&(card[0]==="4")) {
+    //   console.log("Es un cuatro de Corazones");
+    // } else {
+    //   console.log("No es un cuatro de Corazones");
+    // }
+
+
+//----------  EJERCICIO 2 -------------
+
+
+  // 2. Utiliza un bucle para recorrer todos los años bisiestos anteriores a 2050, e imprímelos en la consola.
+  //
+        var modulo=2050%4;
+        var firstYear= 2050-modulo;
+        console.log(firstYear);
+        while (firstYear>0) {
+          firstYear= firstYear - 4;
+          console.log(firstYear);
+        }
+        //Hacerlo con un for tb!!!!!!!!!!
+
+// 3. Utiliza un bucle para recorrer todas las cartas de la baraja,
+// desde el 1 al 12 de cada palo.
+// Imprime en pantalla solamente las cartas rojas que sea múltiplos de 3.
+
+var number=0;
+var diamonds="D";
+var clubs="T";
+var hearts="C";
+var spades="P";
+while (number<12) {
+  number = number+1;
+  console.log(number+diamonds);
+
+}
+number=0;
+while (number<12) {
+  number= number+1
+  console.log(number+clubs);
+
+}
+number=0;
+while (number<12) {
+  number=number+1;
+  console.log(number+hearts);
+
+}
+number=0;
+while (number<12) {
+  number=number+1;
+  console.log(number+spades);
+}
+console.log("Segunda parte del ejercicio");
+number=0;
+// var modulo=number%3;
+// if (number<12) {
+//   number=number+3;
+//   console.log(number+diamonds);
+//   console.log(number+hearts);
+//
+// }
+do {
+  number=number+3;
+    console.log(number+hearts);
+} while (number<12);
+number=0;
+do {
+  number=number+3;
+  console.log(number+diamonds);
+
+} while (number<12);
+// ALEX MODE
+
+var palos="dctp";
+var cartasPorPalo=12;
+
+for (var i = 0; i < palos.length; i++) {
+  for (var j = 0; j < cartasPorPalo.length; j++) {
+    var palo=palos[i];
+    var numero=j;
+    var esRoja= palo==="d"||palo==="c":
+    var esMultipleDeTres
+    if (esRoja¬¬esMultiploDeTres) {
+      console.log(numero+palo);
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+// confirm ("Hola");
+
+
+//Ejercicios del libro de JS
+console.log("Ejercicios del libro");
+var hastag = "#";
+console.log(hastag);
+while(hastag.length<=7){
+  hastag= hastag+"#";
+  console.log(hastag);
+}
+// Write a program that uses console.log to print all the numbers
+// from 1 to 100, with two exceptions. For numbers divisible by 3,
+// print "Fizz" instead of the number, and for numbers divisible
+// by 5 (and not 3), print "Buzz" instead.
+//
+// When you have that working, modify your program to print "FizzBuzz",
+// for numbers that are divisible by both 3 and 5 (and still print
+// "Fizz" or "Buzz" for numbers divisible by only one of those).
+
+console.log("Ejercico 2 del libro");
+
+
+for (var number=0; number <= 100 ; number=number+1) {
+  var modulo3= number%3;
+  var modulo5= number%5;
+
+  if ((modulo5===0)&&(modulo3===0)) {
+    console.log("FizzBuzz");
+  }
+  else if (modulo5===0) {
+    console.log("Buzz");
+  }
+  else if (modulo3===0) {
+    console.log("Buzz");
+  }
+  else {
+  console.log(number);
+  }
+}
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

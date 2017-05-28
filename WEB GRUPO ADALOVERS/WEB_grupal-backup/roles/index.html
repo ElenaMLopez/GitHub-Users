@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+    </title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .roles{
+            margin:30px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .roles figure{
+
+            width: 100%;
+            height:auto;
+
+        }
+
+        .roles figure img{
+            width: 100%;
+            display: block;
+        }
+
+        @media screen and (min-width:780px){
+
+
+            .roles {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .roles figure{
+
+                width: 32%;
+            }
+
+            .roles figure img{
+                width: 100%;
+
+            }
+
+
+        }
+
+        @media screen and (min-width:1024px){
+
+
+            .roles figure{
+
+            }
+
+            .roles figure:hover{
+                transform: scale(1.10);
+                transition: 1s;
+            }
+
+        }
+
+
+
+        /*twiter    https://twitter.com/Vegammm?lang=es
+        email     mariamartincalvo@gmail.com
+        git       https://github.com/vegammm/vegammm.github.io*/
+
+
+
+    </style>
+
+    </head>
+
+    <body>
+
+
+    <div class="roles">
+
+        <figure class="aprendizaje" >
+            <img src="images/aprendizaje.png" alt="aprendizaje">
+        </figure>
+        <figure class="comunicacion">
+            <img src="images/comunicacion.png" alt="comunicacion">
+        </figure>
+        <figure class="eventos">
+            <img src="images/eventos.png" alt="eventos">
+        </figure>
+        <figure class="planificacion">
+            <img src="images/planificacion.png" alt="planificacion">
+        </figure>
+        <figure class="trabajo_en_equipo">
+            <img src="images/trabajo_en_equipo.png" alt="trabajo_en_equipo">
+        </figure>
+
+
+
+    </div>
+
+    </body>
+</html>

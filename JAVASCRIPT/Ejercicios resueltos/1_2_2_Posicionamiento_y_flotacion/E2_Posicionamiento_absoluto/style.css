@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Código reutilizable en todas las cajas */
+
+.box {
+  position: absolute;
+}
+
+.external {
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+
+  /* parte B del ejercicio */
+  padding: 40px;
+  border: 1px solid black;
+}
+
+.intermediate {
+  background-color: green;
+  width: 300px;
+  height: 300px;
+
+  /* parte B del ejercicio */
+  padding: 75px;
+  left: 100px; /* 500px (external width) - 300px (intermediate width)  / 2 (por cada lado)*/
+  top: 100px; /* 500px (external height) - 300px (intermediate height)  / 2 (por cada lado)*/
+}
+
+.internal {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+
+  /* parte B del ejercicio */
+  border: 20px dotted black;
+  left: 75px;
+  top: 75px;
+}

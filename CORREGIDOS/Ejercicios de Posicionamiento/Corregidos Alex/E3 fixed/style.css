@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.cookies {
+  position: fixed;
+  height: 100px;
+  background-color: yellow;
+}

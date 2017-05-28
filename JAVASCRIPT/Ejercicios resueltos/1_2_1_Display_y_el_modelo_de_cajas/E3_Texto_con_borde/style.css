@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border: 8px solid black;
+  margin: 0;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+.content p {
+  margin-bottom: 27px;
+}
+
+.content {
+  width: 80%;
+  margin: 106px auto;
+  max-width: 600px;
+}
+
+.author {
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+
+.link {
+  padding: 8px 16px;
+  margin-left: -16px;
+}

@@ -1,0 +1,36 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0px;
+    border: 8px solid black;
+    width: 86%;
+    max-width: 600px;
+    font-size: 18px;
+    min-height: 85vh;  /*Si pongo 100vh se me queda muy separado el borde de abajo del
+    body*/
+}
+
+.contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 106px;
+    max-width: 450px;
+}
+#titular {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#autor {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+a{
+  padding: 8px 16px;
+  margin-left: -16px;
+}

@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+.contenedor{
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header{
+  background-color: red;
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+
+}
+.aside1{
+  background-color: yellow;
+  width: 20%;
+  /**/
+}
+.aside2{
+  background-color: pink;
+  width: 20%;
+  
+}
+.article{
+  background-color: blue;
+  text-align: left;
+  padding: 6px 12px 6px 12px;
+  width: 60%;
+}
+.footer{
+  background-color: green;
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  }
