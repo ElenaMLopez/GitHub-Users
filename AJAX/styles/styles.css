@@ -1,0 +1,11 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  width: 400px;
+  background-color: #f2ead3;
+  border: 1px solid #4a3f07;
+  padding: 25px; }
+
+/*# sourceMappingURL=styles.css.map */
