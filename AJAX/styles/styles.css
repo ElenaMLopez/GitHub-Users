@@ -8,4 +8,11 @@
   border: 1px solid #4a3f07;
   padding: 25px; }
 
+.picContainer {
+  width: 30%; }
+
+.userPic {
+  display: none;
+  max-width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */
