@@ -4,7 +4,8 @@
 
 body {
   height: 100%;
-  background-color: #746333; }
+  background-color: #746333;
+  font-family: 'Lato', sans-serif; }
 
 .mainContainer {
   width: 100%;
